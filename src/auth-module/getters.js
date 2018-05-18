@@ -3,6 +3,9 @@ export default function makeAuthGetters () {
     // Auth specific "Getters" will go here
     getAuthenticatePending( state ) {
       return function () { return state.isAuthenticatePending }
+    },
+    getAccessToken( state ) {
+      return function () { return state.accessToken }
     }
   }
 }
