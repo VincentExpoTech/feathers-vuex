@@ -6,6 +6,9 @@ export default function makeAuthGetters () {
     },
     getAccessToken( state ) {
       return function () { return state.accessToken }
+    },
+    getUser( state ) {
+      return function () { return state.user }
     }
   }
 }
