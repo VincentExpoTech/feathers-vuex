@@ -9,6 +9,9 @@ export default function makeAuthGetters () {
     },
     getUser( state ) {
       return function () { return state.user }
+    },
+    getErrorOnAuthenticate( state ) {
+      return function () { return state.errorOnAuthenticate }
     }
   }
 }
